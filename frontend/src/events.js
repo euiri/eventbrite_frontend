@@ -1,69 +1,104 @@
 const events = [
   {
     _id: '1',
-    name: 'HOLIDAY Sip and paint art class at Olympia Wine bar, Rumors!',
+    name: 'Paint and sip art class at Chapman Cider in Olympia',
     image: '/images/paint.jpg',
     description:
-      'Come and paint with us and uncork your inner artist at Rumors Wine Bar Olympia!',
+      'Join ARTVANA for a PAINT NIGHT at Chapman Cider!',
     organizer: 'Artväna',
-    date: "2023-12-21",
-    time: "18:00",
-    duration: "2.5hrs",
+    date_time: "2024-2-7 Wednesday 6PM",
+    duration: "3hrs",
     location: {
-      "venue": "Rumors Wine Bar",
-      "address": "430 Washington Street Southeast",
-      "city": "Olympia",
-      "state": "WA",
-      "zip": "98501"
+      "venue": "Chapman Cider",
+      "address": "8024 River Dr SE suite 303 Olympia, WA 98501"
       },      
-    price: 40,
-    quantity_available: 10,
-    rating: 4.5,
-    numReviews: 12,
+    price: 45,
+    spaceLeft: 10,
+    follower: 1200,
   },
   {
     _id: '2',
-    name: 'Kula Cloth - Pyka Plunge 2024',
-    image: '/images/dive.jpg',
-    description:
-      'Celebrate the New Year with cold water plunge in Mukilteo!',
-    organizer: 'Kula Cloth',
-    date: "2024-01-01",
-    time: "12:00",
-    duration: "2hrs",
+    name: 'Valentine\'s Day beginner cookie decorating',
+    image: '/images/cookie.jpg',
+    description: 'Get ready to celebrate Valentine\'s Day by learning the  basics of cookie decorating in a fun and interactive in-person event!',
+    organizer: 'Morgan\'s Mountain Bakery',
+    date_time: "2024-2-10 Saturday 3PM",
+    duration: "3hrs",
     location: {
-      "venue": "Mukilteo Beach",
-      "address": "4609 Front St",
-      "city": "Mukilteo",
-      "state": "WA",
-      "zip": "98275"
+      "venue": "30 Dakota Heights Dr",
+      "address": "30 Dakota Heights Drive Cle Elum, WA 989221"
       },      
-    price: 0,
-    quantity_available: 7,
-    rating: 4.0,
-    numReviews: 8,
+    price: 65,
+    spaceLeft: 5,
+    follower: 15,
   },
   {
     _id: '3',
-    name: '2024 Kick-Off Party',
-    image: '/images/new_year.jpg',
+    name: '4 the Love Gala',
+    image: '/images/gala.jpg',
     description:
-      'Celebrate the New Year with us at the 2024 Kick-Off Party!',
-    organizer: 'NCW Tech Alliance',
-    date: "2024-01-18",
-    time: "17:30",
+      '4 the Love Foundation would like to cordially invite you to our second annual Gala!',
+    organizer: ' 4 the Love Foundation',
+    date_time: "2024-2-7 Wednesday 5PM",
+    duration: "4hrs",
+    location: {
+      "venue": "Nicole's Bar",
+      "address": "109 Legion Way Southwest Olympia, WA 98501"
+      },      
+    price: 100,
+    spaceLeft: 100,
+    follower: 500,
+  },
+  {
+    _id: '4',
+    name: 'Italian Baking Class: Tiramisu & Pistachio Biscotti',
+    image: '/images/cook.jpg',
+    description:
+      'Learn to make traditional Italian tiramisu and biscotti at Layered Cake Artistry!',
+    organizer: 'Layered Cake Artistry',
+    date_time: "2024-2-24 Saturday 1PM",
+    duration: "3hrs",
+    location: {
+      "venue": "Layered Cake Artistry",
+      "address": "117 West Kennewick Avenue Kennewick, WA 99336"
+      },      
+    price: 85,
+    spaceLeft: 510,
+    follower: 20,
+  },
+  {
+    _id: '5',
+    name: 'Joanna Sternberg @ FREMONT ABBEY',
+    image: '/images/music.jpg',
+    description:
+      'Crocodile Presents: Joanna Sternberg live at Fremont Abbey',
+    organizer: 'Abbey Arts Presents',
+    date_time: "2024-2-24 Saturday 8PM",
+    duration: "1.5hrs",
+    location: {
+      "venue": "Fremont Abbey Arts Center",
+      "address": "4272 Fremont Avenue North Seattle, WA 98103"
+      },      
+    price: 21,
+    spaceLeft: 25,
+    follower: 6000,
+  },
+  {
+    _id: '6',
+    name: 'Simply 3 - Back by Popular Demand Again',
+    image: '/images/music2.jpg',
+    description:
+      'Simply 3, who thrilled BachFest audiences in the park, return to play 2 different programs. They are classically trained & pop influenced',
+    organizer: 'Northwest BachFest',
+    date_time: "2024-2-25 Sunday 3PM",
     duration: "2hrs",
     location: {
-      "venue": "Pybus Event Center",
-      "address": "3 N Worthen St",
-      "city": "Wenatchee",
-      "state": "WA",
-      "zip": "98801"
+      "venue": "Barrister Winery",
+      "address": "1213 West Railroad Alley Spokane, WA 99201"
       },      
-    price: 15,
-    countInStock: 0,
-    rating: 3,
-    numReviews: 12,
+    price: 25,
+    spaceLeft: 50,
+    follower: 186,
   }
 ]
 
