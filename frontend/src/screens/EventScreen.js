@@ -43,7 +43,7 @@ export const EventScreen = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: "85vh",
+            height: "120vh",
           }}
         >
           <div style={containerStyle}>
@@ -54,7 +54,7 @@ export const EventScreen = () => {
       <Row>
         <div style={containerStyle1}>
           <div style={{ display: "flex", marginLeft: "115px" }}>
-            <ListGroup.Item style={{ marginTop: "9px" }}>
+            <ListGroup.Item style={{ marginTop: "15px" }}>
               <i class="fa-solid fa-user-plus">
                 &nbsp;<b>Followers: {event.follower}</b>
               </i>
