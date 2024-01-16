@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { Row, Col, Image, Card, Button, ListGroup } from "react-bootstrap";
 import events from "../events";
 import "./EventScreen.css";
+import Map from '../components/Map';
 
 export const EventScreen = () => {
   const params = useParams();
@@ -108,6 +109,7 @@ export const EventScreen = () => {
               <Row>
                 <b>
                   <i class="fa-solid fa-location-dot"></i> Location : {event.location.address}
+                  <Map address={event.location.address} />
                 </b>
               </Row>
             </ListGroup.Item>

@@ -6,7 +6,7 @@ const events = [
     description:
       'Join ARTVANA for a PAINT NIGHT at Chapman Cider!',
     organizer: 'Artväna',
-    date_time: "2024-2-7 Wednesday 6PM",
+    date_time: "Feb 7,2024 Wednesday 6PM",
     duration: "3hrs",
     location: {
       "venue": "Chapman Cider",
@@ -22,7 +22,7 @@ const events = [
     image: '/images/cookie.jpg',
     description: 'Get ready to celebrate Valentine\'s Day by learning the  basics of cookie decorating in a fun and interactive in-person event!',
     organizer: 'Morgan\'s Mountain Bakery',
-    date_time: "2024-2-10 Saturday 3PM",
+    date_time: "Feb 10,2024 Saturday 3PM",
     duration: "3hrs",
     location: {
       "venue": "30 Dakota Heights Dr",
@@ -39,7 +39,7 @@ const events = [
     description:
       '4 the Love Foundation would like to cordially invite you to our second annual Gala!',
     organizer: ' 4 the Love Foundation',
-    date_time: "2024-2-7 Wednesday 5PM",
+    date_time: "Feb 7,2024 Wednesday 5PM",
     duration: "4hrs",
     location: {
       "venue": "Nicole's Bar",
@@ -56,7 +56,7 @@ const events = [
     description:
       'Learn to make traditional Italian tiramisu and biscotti at Layered Cake Artistry!',
     organizer: 'Layered Cake Artistry',
-    date_time: "2024-2-24 Saturday 1PM",
+    date_time: "Feb 24,2024 Saturday 1PM",
     duration: "3hrs",
     location: {
       "venue": "Layered Cake Artistry",
@@ -73,7 +73,7 @@ const events = [
     description:
       'Crocodile Presents: Joanna Sternberg live at Fremont Abbey',
     organizer: 'Abbey Arts Presents',
-    date_time: "2024-2-24 Saturday 8PM",
+    date_time: "Feb 24,2024 Saturday 8PM",
     duration: "1.5hrs",
     location: {
       "venue": "Fremont Abbey Arts Center",
@@ -90,7 +90,7 @@ const events = [
     description:
       'Simply 3, who thrilled BachFest audiences in the park, return to play 2 different programs. They are classically trained & pop influenced',
     organizer: 'Northwest BachFest',
-    date_time: "2024-2-25 Sunday 3PM",
+    date_time: "Feb 25,2024 Sunday 3PM",
     duration: "2hrs",
     location: {
       "venue": "Barrister Winery",

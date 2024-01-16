@@ -1,7 +1,7 @@
 import React from 'react'
 import {Card} from 'react-bootstrap';
 import {Link } from 'react-router-dom'
-import Map from './Map';
+
 
 const Event = ({event}) => {
   return (
@@ -19,14 +19,19 @@ const Event = ({event}) => {
       <Card.Text as ='div'>
          <b>{event.date_time}</b>
       </Card.Text><br/>
-      <Map address={event.location.address} />
+      
             
 
 
-      <Card.Text as ='div'style={{ height: '4rem', fontSize: '14px'}}>
-          {event.location.venue}<br/>
+      <Card.Text as ='div'style={{ height: '0.5rem', fontSize: '14px'}}>
+          {event.location.venue}
+          </Card.Text>
+          
+      <Card.Text as ='div'style={{ height: '4rem', fontSize: '14px'}}>   
+          <br/>
           <i class="fa-solid fa-location-dot"></i> {event.location.address}
-        </Card.Text><br/>
+        <br/>
+        </Card.Text>
         <Card.Text as ='div'>Ticket Price: 
          $ <b>{event.price}</b>
         </Card.Text><br/>
