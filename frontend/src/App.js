@@ -9,17 +9,19 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 const App = () => {
   return (
     <>
-      <Header/> 
-      <main>
-        <Container>
-          <Routes>
-              <Route path="/" exact element={<HomeScreen />} />
-        
-          </Routes>
-        </Container>
-      
-      </main>
-      <Footer/>
+      <Router>
+        <Header/> 
+          <main>
+            <Container>
+              <Routes>
+                  <Route path="/" exact element={<HomeScreen />} />
+            
+              </Routes>
+            </Container>
+          
+          </main>
+        <Footer/>
+      </Router>
     </>
   )
 }

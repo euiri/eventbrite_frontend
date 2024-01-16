@@ -1,6 +1,8 @@
 import React from 'react'
 import events from '../events'
 import Event from '../components/Event'
+import { Col, Row } from 'react-bootstrap'
+
 
 const HomeScreen = () => {
   return (
