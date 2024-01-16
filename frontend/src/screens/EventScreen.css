@@ -1,0 +1,18 @@
+.custom-width-col {
+  flex: 0 0 60%; 
+  max-width: 30.3%;
+  padding-right: 94px;
+}
+
+.padding {
+  padding-left: 110px; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
