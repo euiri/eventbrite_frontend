@@ -19,8 +19,7 @@ return (
           </div>
       </Row>
       <Row>
-      <div className="containerStyle1">
-            <ListGroup.Item style={{ marginTop: "20px"}}>
+         <ListGroup.Item style={{ marginTop: "20px"}}>
             &nbsp; <i class="fa-solid fa-user-plus">
                 &nbsp;<b>Followers: {event.follower}</b>
               </i>
@@ -29,8 +28,7 @@ return (
             >
               Follow
             </Button>
-            </ListGroup.Item>
-          </div>
+          </ListGroup.Item>    
       </Row>
       <br></br>
       <Row>

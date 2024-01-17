@@ -7,10 +7,7 @@ const Map = ({ address }) => {
 
   return (
     <iframe
-      title="Google Maps"
-      width="100"
-      height="200"
-      style={{ border: 0 }}
+      style={{ border: 0, width: "30%" }}
       loading="lazy"
       allowFullScreen
       referrerPolicy="no-referrer-when-downgrade"
