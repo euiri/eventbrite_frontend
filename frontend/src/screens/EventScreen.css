@@ -1,18 +1,17 @@
-.custom-width-col {
-  flex: 0 0 60%; 
-  max-width: 30.3%;
-  padding-right: 94px;
+.containerStyle {
+  background-color: linear-gradient(to right, #f0f0f0, #e0e0e0);
+  padding: 0px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: none;
 }
 
 .padding {
-  padding-left: 110px; 
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  padding-left:0px; 
+  
 }

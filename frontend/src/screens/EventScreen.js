@@ -3,70 +3,34 @@ import { useParams, Link } from "react-router-dom";
 import { Row, Col, Image, Card, Button, ListGroup } from "react-bootstrap";
 import events from "../events";
 import "./EventScreen.css";
-import Map from '../components/Map';
+import Map from "../components/Map";
 
 export const EventScreen = () => {
   const params = useParams();
   const event = events.find((p) => p._id === params.id);
-
-  const containerStyle = {
-    backgroundColor: "linear-gradient(to right, #f0f0f0, #e0e0e0)",
-    padding: "20px",
-    borderRadius: "10px",
-    boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-    overflow: "hidden",
-    border: "none",
-    opacity: 0,
-    animation: "fadeIn 0.5s ease-out forwards",
-  };
-
-  const containerStyle1 = {
-    backgroundColor: "linear-gradient(to right, #f0f0f0, #e0e0e0)",
-    padding: "20px 0 20px",
-    borderRadius: "8px",
-    boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-    overflow: "hidden",
-    border: "none",
-    width: "40%",
-    margin: "0 auto 0 115px",
-  };
-
-  return (
+return (
     <>
       <Link className="btn btn-light my-3" to="/">
         Go Back
       </Link>
-
       <Row>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "120vh",
-          }}
-        >
-          <div style={containerStyle}>
-            <Image src={event.image} alt={event.name} fluid style={{ width: "1050px" }}/>
+       <div className="containerStyle">
+            <Image src={event.image} alt={event.name} fluid style={{ maxWidth: "100%" , height:"50vh"}}/>
           </div>
-        </div>
       </Row>
       <Row>
-        <div style={containerStyle1}>
-          <div style={{ display: "flex", marginLeft: "115px" }}>
-            <ListGroup.Item style={{ marginTop: "15px" }}>
-              <i class="fa-solid fa-user-plus">
+      <div className="containerStyle1">
+            <ListGroup.Item style={{ marginTop: "20px"}}>
+            &nbsp; <i class="fa-solid fa-user-plus">
                 &nbsp;<b>Followers: {event.follower}</b>
               </i>
-            </ListGroup.Item>
-            <Button
-              style={{ backgroundColor: "#4B0082", marginLeft: "30px" }}
-              variant="dark"
+              <Button
+              style={{ backgroundColor: "#4B0082", marginLeft: "30px" }} variant="dark"
             >
               Follow
             </Button>
+            </ListGroup.Item>
           </div>
-        </div>
       </Row>
       <br></br>
       <Row>
@@ -109,13 +73,14 @@ export const EventScreen = () => {
               <Row>
                 <b>
                   <i class="fa-solid fa-location-dot"></i> Location : {event.location.address}
-                  <Map address={event.location.address} />
+                  
                 </b>
+                <Map address={event.location.address} />
               </Row>
-            </ListGroup.Item>
+             </ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col md={2} className="custom-width-col">
+        <Col md={3} className="custom-width-col">
           <Card>
             <ListGroup variant="flush">
               <ListGroup.Item>
@@ -149,7 +114,7 @@ export const EventScreen = () => {
                 </Button>
               </ListGroup.Item>
             </ListGroup>
-          </Card>
+            </Card>
         </Col>
       </Row>
     </>

@@ -9,7 +9,7 @@ const Map = ({ address }) => {
     <iframe
       title="Google Maps"
       width="100"
-      height="150"
+      height="200"
       style={{ border: 0 }}
       loading="lazy"
       allowFullScreen
