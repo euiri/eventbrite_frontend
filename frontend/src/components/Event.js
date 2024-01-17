@@ -6,7 +6,7 @@ import {Link } from 'react-router-dom'
 const Event = ({event}) => {
   return (
 
-    <Card className ="my-5 p-3 rounded">
+    <Card className ="my-5 p-3 rounded" style ={{borderStyle: "none"}}>
       <Link to = {`./event/${event._id}`}>
           <Card.Img src ={event.image} variant ='top' className='rounded'/>
       </Link>
